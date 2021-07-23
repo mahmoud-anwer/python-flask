@@ -7,4 +7,4 @@ RUN apt-get update -y && \
     pip3 install Flask && \
     pip3 install mysql-connector-python
 COPY . .
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD python3 app.py
